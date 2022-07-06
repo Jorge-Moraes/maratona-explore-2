@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300;1,400&display=swap');
+/* RESET DA PAGINA */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+/* CORPO DO ARQUIVO */
+body{
+    background-color: #EDF2FF;
+    margin-top: 60px;
+    background-image: url("./image/image-background3.jpg");
+    background-repeat: no-repeat;
+
+}
+/* IMAGEM PRINCIPAL, OU AVATAR */
+.mainImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #EDF2FF;
+    border: 4px solid #4263EB;
+    padding: 3px;
+}
+/* ICONES DO AWESOME ICON PARA REDE SOCIAIS */
+.imgIcon{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+}
+/* CONFIGURAÇÃO COMPLEMENTAR DOS TEXTOS */
+h1, p, ul{
+    margin: 10px;
+    padding-bottom: 30px;
+}
+/* CONTEUDO PRINCIPAL */
+.container{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 60px;
+    width: 500px;
+    height: max-content;
+    
+}
+/* BORDAR E BOX SHADOW DO CONTEUDO PRINCIPAL */
+.container{
+    height: auto;
+    border: 2px solid black;
+    box-shadow: 20px 20px 20px 20px  #393939;
+}
+/* CONTEUDO DAS LISTA DAS REDES SOCIAIS */
+.container ul li{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #4263EB;
+    
+}
+/* EFEITO DO CONTEUDO DAS LISTA DE REDE SOCIAIS */
+.container ul li a:hover{
+    opacity: 0.85px;
+    background-color: #4264ebb9;
+    font-weight: 600;
+    transition: 0.4ms;
+    color: white;
+}
+/* CONTEUDO DO FOOTER */
+.footer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+}
+/* ICONE DE CORAÇÃO DO FOOTER  */
+.imgIconFooter{
+    width: 25px;
+    height: 25px;
+    color:#6246ea;
+    font-size: 20px;
+}
+/* COR DO LINK DA ROCKETSEAT */
+.colorLink{
+    color: #6246ea;
+}
+/* TRANSIÇÃO DE COR, PARA DESTACAR O NOME DA ROCKETSEAT */
+.colorLink:hover{
+    color: #fff;
+}

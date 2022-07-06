@@ -12,10 +12,17 @@
 }
 /* CORPO DO ARQUIVO */
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    max-width: 100vw;
+    max-height: 100vh;
     background-color: #EDF2FF;
-    margin-top: 60px;
     background-image: url("./image/image-background3.jpg");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat center/100%;
+    background-attachment: fixed;
 
 }
 /* IMAGEM PRINCIPAL, OU AVATAR */
@@ -37,23 +44,20 @@ body{
 }
 /* CONFIGURAÇÃO COMPLEMENTAR DOS TEXTOS */
 h1, p, ul{
-    margin: 10px;
     padding-bottom: 30px;
 }
 /* CONTEUDO PRINCIPAL */
 .container{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    padding-top: 60px;
-    width: 500px;
-    height: max-content;
-    
+    padding-top: 30px;
+    max-width: 500px;
 }
 /* BORDAR E BOX SHADOW DO CONTEUDO PRINCIPAL */
 .container{
-    height: auto;
     border: 2px solid black;
     box-shadow: 20px 20px 20px 20px  #393939;
 }
@@ -85,7 +89,7 @@ h1, p, ul{
     font-weight: 600;
     width: 100vw;
     height: 100vh;
-    padding: 30px;
+    padding: 50px;
 }
 /* ICONE DE CORAÇÃO DO FOOTER  */
 .imgIconFooter{
@@ -101,4 +105,49 @@ h1, p, ul{
 /* TRANSIÇÃO DE COR, PARA DESTACAR O NOME DA ROCKETSEAT */
 .colorLink:hover{
     color: #fff;
+}
+@media (min-width: 320px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 375px){
+    .container{
+        display: block;
+        flex-direction: column;
+        width: 320px;
+        align-content: center;
+        justify-items: center;
+    }
+}
+@media (min-width: 425px){
+    .container{
+        display: block;
+        flex-direction: column;
+        width: 375px;
+        align-content: center;
+        justify-items: center;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        display: block;
+        flex-direction: column;
+        width: 425px;
+        align-content: center;
+        justify-items: center;
+    }
+}
+@media (min-width: 1024px){
+    .container{
+        display: block;
+        flex-direction: column;
+        width: 768px;
+        align-content: center;
+        justify-items: center;
+    }
 }

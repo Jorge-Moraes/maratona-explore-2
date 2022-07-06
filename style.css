@@ -106,20 +106,22 @@ h1, p, ul{
 .colorLink:hover{
     color: #fff;
 }
-@media (min-width: 320px){
-    .container{
+@media (max-width: 320px){
+    body{
         display: flex;
         flex-direction: column;
-        width: auto;
+        width: 320px;
+        margin-top: 50px;
+        padding-top: 30px;
         align-items: center;
-        justify-content: center;
     }
 }
 @media (min-width: 375px){
     .container{
         display: block;
         flex-direction: column;
-        width: 320px;
+        width: 375px;
+        margin-top: 100px;
         align-content: center;
         justify-items: center;
     }
